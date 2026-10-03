@@ -1,0 +1,3122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#0f172a">
+<title>Terms of Use — Ketentuan Penggunaan AppHub.ID</title>
+<meta name="description" content="Ketentuan Penggunaan resmi AppHub.ID untuk seluruh aplikasi dan game yang dikembangkan oleh AppHub.ID.">
+<style>
+  :root {
+    --bg: #f4f5f7;
+    --surface: #ffffff;
+    --surface-alt: #f8fafc;
+    --border: #e2e6ed;
+    --border-strong: #cfd6e0;
+    --text: #1b2330;
+    --text-soft: #4a5568;
+    --text-muted: #6b7280;
+    --accent: #1e3a8a;
+    --accent-soft: #eef2ff;
+    --accent-line: #c7d2fe;
+    --danger-bg: #fff1f2;
+    --danger-border: #fecdd3;
+    --danger-text: #9f1239;
+    --radius: 12px;
+    --radius-sm: 8px;
+    --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.04);
+    --shadow-md: 0 4px 14px rgba(15, 23, 42, 0.06);
+  }
+
+  * {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Roboto, "Noto Sans", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.65;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-drag: none;
+    touch-action: pan-y;
+  }
+
+  input, textarea, select {
+    -webkit-user-select: text;
+    user-select: text;
+  }
+
+  /* ============ HEADER ============ */
+  .site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.96);
+    -webkit-backdrop-filter: saturate(180%) blur(12px);
+    backdrop-filter: saturate(180%) blur(12px);
+    border-bottom: 1px solid var(--border);
+  }
+
+  .header-inner {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .brand-mark {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    flex-shrink: 0;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .brand-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .brand-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text);
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+
+  .brand-sub {
+    font-size: 11px;
+    color: var(--text-muted);
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  /* ============ LAYOUT ============ */
+  .page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 16px 64px;
+  }
+
+  /* ============ HERO ============ */
+  .hero {
+    padding: 28px 0 20px;
+  }
+
+  .hero-eyebrow {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-line);
+    padding: 5px 11px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+
+  .hero-title {
+    margin: 0 0 10px;
+    font-size: 27px;
+    line-height: 1.22;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text);
+  }
+
+  .hero-title span {
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-soft);
+    margin-top: 6px;
+    letter-spacing: -0.01em;
+  }
+
+  .hero-desc {
+    margin: 0;
+    font-size: 14.5px;
+    color: var(--text-soft);
+    line-height: 1.65;
+  }
+
+  /* ============ META CARD ============ */
+  .meta-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 18px;
+    margin: 20px 0 24px;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .meta-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px 12px;
+  }
+
+  .meta-item {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    min-width: 0;
+  }
+
+  .meta-item.full {
+    grid-column: 1 / -1;
+    padding-top: 12px;
+    border-top: 1px dashed var(--border);
+  }
+
+  .meta-label {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  .meta-value {
+    font-size: 13.5px;
+    font-weight: 600;
+    color: var(--text);
+    word-break: break-word;
+  }
+
+  .meta-value.placeholder {
+    color: var(--accent);
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+    font-size: 12.5px;
+  }
+
+  /* ============ TOC ============ */
+  .toc {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    margin-bottom: 28px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+  }
+
+  .toc-toggle {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 16px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    cursor: pointer;
+    text-align: left;
+    letter-spacing: -0.01em;
+  }
+
+  .toc-toggle .toc-count {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--accent);
+    background: var(--accent-soft);
+    padding: 3px 8px;
+    border-radius: 999px;
+    letter-spacing: 0.04em;
+  }
+
+  .toc-chevron {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    transition: transform 0.22s ease;
+    color: var(--text-muted);
+  }
+
+  .toc.open .toc-chevron {
+    transform: rotate(180deg);
+  }
+
+  .toc-body {
+    display: none;
+    border-top: 1px solid var(--border);
+    padding: 8px 10px 12px;
+    background: var(--surface-alt);
+  }
+
+  .toc.open .toc-body {
+    display: block;
+  }
+
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 1;
+  }
+
+  .toc-list li {
+    margin: 0;
+  }
+
+  .toc-list a {
+    display: block;
+    padding: 8px 10px;
+    font-size: 13.5px;
+    color: var(--text-soft);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    line-height: 1.45;
+    transition: background 0.15s ease, color 0.15s ease;
+  }
+
+  .toc-list a:active {
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+
+  .toc-num {
+    display: inline-block;
+    min-width: 26px;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    font-size: 12.5px;
+  }
+
+  /* ============ INTRO NOTICE ============ */
+  .notice {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--accent);
+    border-radius: var(--radius-sm);
+    padding: 16px 18px;
+    margin-bottom: 28px;
+  }
+
+  .notice-title {
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 8px;
+  }
+
+  .notice p {
+    margin: 0;
+    font-size: 13.5px;
+    color: var(--text-soft);
+    line-height: 1.65;
+  }
+
+  /* ============ SECTIONS ============ */
+  .section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 20px 18px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow-sm);
+    scroll-margin-top: 72px;
+  }
+
+  .section-head {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 14px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-num {
+    flex-shrink: 0;
+    min-width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 14px;
+    font-variant-numeric: tabular-nums;
+    letter-spacing: -0.02em;
+    box-shadow: 0 2px 6px rgba(30, 58, 138, 0.22);
+  }
+
+  .section-title-wrap {
+    min-width: 0;
+    padding-top: 2px;
+  }
+
+  .section-kicker {
+    font-size: 10.5px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    margin: 0 0 2px;
+  }
+
+  .section-title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 800;
+    letter-spacing: -0.015em;
+    line-height: 1.3;
+    color: var(--text);
+  }
+
+  .section p {
+    margin: 0 0 12px;
+    font-size: 14.5px;
+    line-height: 1.72;
+    color: var(--text-soft);
+  }
+
+  .section p:last-child {
+    margin-bottom: 0;
+  }
+
+  .subsection {
+    margin: 0 0 16px;
+  }
+
+  .subsection:last-child {
+    margin-bottom: 0;
+  }
+
+  .subsection-title {
+    margin: 0 0 7px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.4;
+    letter-spacing: -0.005em;
+  }
+
+  .clause-num {
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    color: var(--accent);
+    margin-right: 6px;
+  }
+
+  .section ul, .section ol {
+    margin: 0 0 12px;
+    padding-left: 0;
+    list-style: none;
+  }
+
+  .section ul li, .section ol li {
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+    font-size: 14.5px;
+    line-height: 1.68;
+    color: var(--text-soft);
+  }
+
+  .section ul li:last-child, .section ol li:last-child {
+    margin-bottom: 0;
+  }
+
+  .section ul li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 9px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    opacity: 0.65;
+  }
+
+  .section ol {
+    counter-reset: olc;
+  }
+
+  .section ol li {
+    counter-increment: olc;
+    padding-left: 26px;
+  }
+
+  .section ol li::before {
+    content: counter(olc) ".";
+    position: absolute;
+    left: 2px;
+    top: 0;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    font-variant-numeric: tabular-nums;
+    line-height: 1.68;
+  }
+
+  /* ============ PRODUCT GRID ============ */
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 8px;
+    margin: 4px 0 14px;
+  }
+
+  .product-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    background: var(--surface-alt);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 11px 12px;
+  }
+
+  .product-icon {
+    flex-shrink: 0;
+    font-size: 17px;
+    line-height: 1.2;
+    width: 22px;
+    text-align: center;
+  }
+
+  .product-body {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .product-name {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.35;
+    margin: 0;
+  }
+
+  .product-desc {
+    font-size: 12.5px;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin: 3px 0 0;
+  }
+
+  /* ============ CALLOUT ============ */
+  .callout {
+    background: var(--accent-soft);
+    border: 1px solid var(--accent-line);
+    border-radius: var(--radius-sm);
+    padding: 13px 15px;
+    margin: 12px 0 0;
+  }
+
+  .callout p {
+    margin: 0;
+    font-size: 13.5px;
+    color: #1e3a8a;
+    line-height: 1.65;
+    font-weight: 500;
+  }
+
+  .callout strong {
+    font-weight: 800;
+  }
+
+  /* ============ DIVIDER ============ */
+  .divider {
+    height: 1px;
+    background: var(--border);
+    margin: 24px 0;
+    border: none;
+  }
+
+  /* ============ FOOTER ============ */
+  .site-footer {
+    background: #0f172a;
+    color: #cbd5e1;
+    padding: 32px 18px 40px;
+    text-align: center;
+    margin-top: 8px;
+  }
+
+  .footer-brand {
+    font-size: 17px;
+    font-weight: 800;
+    color: #ffffff;
+    letter-spacing: -0.01em;
+    margin-bottom: 4px;
+  }
+
+  .footer-sub {
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #94a3b8;
+    font-weight: 600;
+    margin-bottom: 18px;
+  }
+
+  .footer-line {
+    height: 1px;
+    background: #1e293b;
+    max-width: 200px;
+    margin: 0 auto 18px;
+    border: none;
+  }
+
+  .footer-meta {
+    font-size: 12.5px;
+    color: #94a3b8;
+    line-height: 1.8;
+  }
+
+  .footer-meta strong {
+    color: #e2e8f0;
+    font-weight: 600;
+  }
+
+  .footer-copy {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #64748b;
+    letter-spacing: 0.02em;
+  }
+
+  /* ============ UNSUPPORTED ============ */
+  #unsupported-screen {
+    display: none;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 28px 20px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(160deg, #f4f5f7 0%, #e8ecf3 100%);
+  }
+
+  #unsupported-screen.active {
+    display: flex;
+  }
+
+  .unsupported-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 30px 22px 28px;
+    max-width: 440px;
+    width: 100%;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+  }
+
+  .unsupported-icon {
+    width: 66px;
+    height: 66px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, #1e3a8a 0%, #3730a3 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+    box-shadow: 0 6px 18px rgba(30, 58, 138, 0.25);
+  }
+
+  .unsupported-title {
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    line-height: 1.3;
+  }
+
+  .unsupported-text {
+    margin: 0 0 22px;
+    font-size: 14px;
+    color: var(--text-soft);
+    line-height: 1.7;
+  }
+
+  .unsupported-divider {
+    height: 1px;
+    background: var(--border);
+    margin: 0 0 20px;
+    border: none;
+  }
+
+  .unsupported-brand {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+  }
+
+  #main-content {
+    display: none;
+  }
+
+  #main-content.active {
+    display: block;
+  }
+
+  /* ============ RESPONSIVE TWEAKS ============ */
+  @media (max-width: 380px) {
+    .hero-title { font-size: 24px; }
+    .hero-title span { font-size: 15.5px; }
+    .section { padding: 17px 15px; }
+    .section-title { font-size: 16px; }
+    .section-num { min-width: 36px; height: 36px; font-size: 13px; }
+    .section p, .section ul li, .section ol li { font-size: 14px; }
+    .meta-grid { grid-template-columns: 1fr; }
+    .header-inner { padding: 10px 14px; }
+    .page { padding-left: 13px; padding-right: 13px; }
+  }
+
+  @media (min-width: 480px) {
+    .product-list { grid-template-columns: 1fr 1fr; }
+    .toc-list { columns: 2; column-gap: 6px; }
+    .toc-list li { break-inside: avoid; }
+  }
+
+  @media print {
+    body { background: #ffffff; }
+    .site-header, .toc, .site-footer, #unsupported-screen { display: none !important; }
+    .section { box-shadow: none; border-color: #cccccc; page-break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ UNSUPPORTED DEVICE SCREEN ============ -->
+<div id="unsupported-screen" role="alert" aria-live="polite">
+  <div class="unsupported-card">
+    <div class="unsupported-icon" aria-hidden="true">
+      <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="7" y="2" width="10" height="20" rx="2"></rect>
+        <line x1="11" y1="18" x2="13" y2="18"></line>
+        <line x1="3" y1="3" x2="21" y2="21"></line>
+      </svg>
+    </div>
+    <h1 class="unsupported-title">Perangkat Tidak Didukung</h1>
+    <p class="unsupported-text">
+      Website Terms of Use AppHub.ID ini dirancang khusus untuk smartphone Android dan iPhone.
+      Silakan buka halaman ini menggunakan perangkat Android atau iPhone untuk melanjutkan.
+    </p>
+    <hr class="unsupported-divider">
+    <div class="unsupported-brand">AppHub.ID — Official Terms of Use</div>
+  </div>
+</div>
+
+<!-- ============ MAIN CONTENT ============ -->
+<div id="main-content">
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand-mark" aria-hidden="true">AH</div>
+      <div class="brand-text">
+        <span class="brand-name">AppHub.ID</span>
+        <span class="brand-sub">Official Legal Document</span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="doc-title">
+      <span class="hero-eyebrow">Terms of Use</span>
+      <h1 class="hero-title" id="doc-title">
+        Ketentuan Penggunaan
+        <span>AppHub.ID — Dokumen Resmi</span>
+      </h1>
+      <p class="hero-desc">
+        Dokumen ini mengatur syarat dan ketentuan yang berlaku atas penggunaan seluruh
+        aplikasi dan permainan digital yang dikembangkan, diterbitkan, serta dipelihara
+        oleh AppHub.ID. Mohon dibaca secara menyeluruh sebelum menggunakan produk apa pun.
+      </p>
+    </section>
+
+    <!-- META CARD -->
+    <section class="meta-card" aria-label="Informasi Dokumen">
+      <div class="meta-grid">
+        <div class="meta-item">
+          <span class="meta-label">Developer</span>
+          <span class="meta-value">AppHub.ID</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Jenis Dokumen</span>
+          <span class="meta-value">Terms of Use</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Effective Date</span>
+          <span class="meta-value placeholder">30 desember 2026</span>
+        </div>
+        <div class="meta-item">
+          <span class="meta-label">Last Updated</span>
+          <span class="meta-value placeholder">04 oktober 2026</span>
+        </div>
+        <div class="meta-item full">
+          <span class="meta-label">Kontak Resmi</span>
+          <span class="meta-value placeholder">apphubid@gmail.com</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TOC -->
+    <nav class="toc" id="toc" aria-label="Daftar Isi">
+      <button class="toc-toggle" id="tocToggle" type="button" aria-expanded="false" aria-controls="tocBody">
+        <span>Daftar Isi Dokumen</span>
+        <span style="display:flex;align-items:center;gap:10px;">
+          <span class="toc-count">46 Pasal</span>
+          <svg class="toc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </span>
+      </button>
+      <div class="toc-body" id="tocBody">
+        <ul class="toc-list">
+          <li><a href="#pasal-1"><span class="toc-num">01</span>Pendahuluan</a></li>
+          <li><a href="#pasal-2"><span class="toc-num">02</span>Definisi</a></li>
+          <li><a href="#pasal-3"><span class="toc-num">03</span>Penerimaan Ketentuan</a></li>
+          <li><a href="#pasal-4"><span class="toc-num">04</span>Ruang Lingkup Produk</a></li>
+          <li><a href="#pasal-5"><span class="toc-num">05</span>Kelayakan Penggunaan</a></li>
+          <li><a href="#pasal-6"><span class="toc-num">06</span>Lisensi Penggunaan</a></li>
+          <li><a href="#pasal-7"><span class="toc-num">07</span>Hak Kekayaan Intelektual</a></li>
+          <li><a href="#pasal-8"><span class="toc-num">08</span>Penggunaan yang Diperbolehkan</a></li>
+          <li><a href="#pasal-9"><span class="toc-num">09</span>Larangan Penggunaan</a></li>
+          <li><a href="#pasal-10"><span class="toc-num">10</span>Konten Pengguna</a></li>
+          <li><a href="#pasal-11"><span class="toc-num">11</span>Akun Pengguna</a></li>
+          <li><a href="#pasal-12"><span class="toc-num">12</span>Informasi Edukasi</a></li>
+          <li><a href="#pasal-13"><span class="toc-num">13</span>InvestasiKu — Ketentuan Khusus</a></li>
+          <li><a href="#pasal-14"><span class="toc-num">14</span>StudentOS, StudyFlow, PaperHelper</a></li>
+          <li><a href="#pasal-15"><span class="toc-num">15</span>Cybersecurity Learning Lab</a></li>
+          <li><a href="#pasal-16"><span class="toc-num">16</span>Android Diagnostic Lab</a></li>
+          <li><a href="#pasal-17"><span class="toc-num">17</span>Portal Wilayah Perawang</a></li>
+          <li><a href="#pasal-18"><span class="toc-num">18</span>BudgetKu dan KostKu</a></li>
+          <li><a href="#pasal-19"><span class="toc-num">19</span>Kerja &amp; Magang Hub</a></li>
+          <li><a href="#pasal-20"><span class="toc-num">20</span>Mystery Case Archive</a></li>
+          <li><a href="#pasal-21"><span class="toc-num">21</span>Document &amp; Text Toolkit</a></li>
+          <li><a href="#pasal-22"><span class="toc-num">22</span>Akurasi Informasi</a></li>
+          <li><a href="#pasal-23"><span class="toc-num">23</span>Ketersediaan Layanan</a></li>
+          <li><a href="#pasal-24"><span class="toc-num">24</span>Pembaruan Produk</a></li>
+          <li><a href="#pasal-25"><span class="toc-num">25</span>Produk dan Layanan Pihak Ketiga</a></li>
+          <li><a href="#pasal-26"><span class="toc-num">26</span>Tautan Eksternal</a></li>
+          <li><a href="#pasal-27"><span class="toc-num">27</span>Perlindungan terhadap Penyalahgunaan</a></li>
+          <li><a href="#pasal-28"><span class="toc-num">28</span>Penangguhan atau Penghentian Akses</a></li>
+          <li><a href="#pasal-29"><span class="toc-num">29</span>Disclaimer</a></li>
+          <li><a href="#pasal-30"><span class="toc-num">30</span>Batas Tanggung Jawab</a></li>
+          <li><a href="#pasal-31"><span class="toc-num">31</span>Ganti Rugi</a></li>
+          <li><a href="#pasal-32"><span class="toc-num">32</span>Keadaan di Luar Kendali</a></li>
+          <li><a href="#pasal-33"><span class="toc-num">33</span>Perubahan Terms of Use</a></li>
+          <li><a href="#pasal-34"><span class="toc-num">34</span>Severability</a></li>
+          <li><a href="#pasal-35"><span class="toc-num">35</span>Waiver</a></li>
+          <li><a href="#pasal-36"><span class="toc-num">36</span>Pengalihan</a></li>
+          <li><a href="#pasal-37"><span class="toc-num">37</span>Hubungan Para Pihak</a></li>
+          <li><a href="#pasal-38"><span class="toc-num">38</span>Hukum yang Berlaku</a></li>
+          <li><a href="#pasal-39"><span class="toc-num">39</span>Penyelesaian Sengketa</a></li>
+          <li><a href="#pasal-40"><span class="toc-num">40</span>Ketentuan Khusus Platform</a></li>
+          <li><a href="#pasal-41"><span class="toc-num">41</span>Ketentuan Produk</a></li>
+          <li><a href="#pasal-42"><span class="toc-num">42</span>Tidak Ada Jaminan Hasil Tertentu</a></li>
+          <li><a href="#pasal-43"><span class="toc-num">43</span>Tanggung Jawab Pengguna</a></li>
+          <li><a href="#pasal-44"><span class="toc-num">44</span>Keseluruhan Perjanjian</a></li>
+          <li><a href="#pasal-45"><span class="toc-num">45</span>Tanggal Efektif dan Pembaruan</a></li>
+          <li><a href="#pasal-46"><span class="toc-num">46</span>Kontak Resmi</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- NOTICE -->
+    <div class="notice">
+      <p class="notice-title">Perhatian</p>
+      <p>
+        Dokumen ini merupakan satu kesatuan yang tidak terpisahkan dari syarat penggunaan
+        produk AppHub.ID. Dengan mengakses, memasang, atau menggunakan produk apa pun yang
+        dikembangkan oleh AppHub.ID, Anda dianggap telah membaca, memahami, dan menyetujui
+        seluruh ketentuan yang tercantum di dalam dokumen ini.
+      </p>
+    </div>
+
+    <!-- ============ PASAL 1 ============ -->
+    <article class="section" id="pasal-1">
+      <div class="section-head">
+        <div class="section-num">01</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 1</p>
+          <h2 class="section-title">Pendahuluan</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">1.1</span>Identitas Pengembang</h3>
+        <p>
+          AppHub.ID adalah pengembang perangkat lunak independen yang merancang, membangun,
+          memelihara, serta mendistribusikan berbagai aplikasi digital dan permainan
+          elektronik untuk perangkat bergerak. Seluruh produk yang dikembangkan oleh
+          AppHub.ID dipublikasikan dengan identitas pengembang yang sama, baik melalui
+          saluran distribusi resmi maupun melalui kanal yang secara sah ditunjuk.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">1.2</span>Tujuan Dokumen</h3>
+        <p>
+          Dokumen ini merupakan Ketentuan Penggunaan resmi (<em>Terms of Use</em>) yang
+          mengatur hubungan hukum antara AppHub.ID dan setiap individu yang mengakses,
+          memasang, atau menggunakan produk AppHub.ID. Dokumen ini menjelaskan hak,
+          kewajiban, batasan, serta tanggung jawab masing-masing pihak dalam konteks
+          penggunaan produk yang bersangkutan.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">1.3</span>Ruang Lingkup Ketentuan</h3>
+        <p>
+          Ketentuan dalam dokumen ini berlaku terhadap seluruh aplikasi, permainan,
+          layanan, materi digital, dan fitur yang dikembangkan atau diterbitkan oleh
+          AppHub.ID, kecuali secara tegas dinyatakan lain melalui ketentuan khusus
+          produk. Ruang lingkup juga mencakup pembaruan, tambahan fitur, serta versi
+          lanjutan yang dirilis di kemudian hari.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">1.4</span>Produk yang Tercakup</h3>
+        <p>
+          Dokumen ini mencakup, namun tidak terbatas pada, produk-produk AppHub.ID berikut:
+        </p>
+        <div class="product-list">
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">🏙️</span>
+            <div class="product-body">
+              <p class="product-name">Portal Wilayah Perawang</p>
+              <p class="product-desc">Informasi umum terkait wilayah dan fasilitas daerah.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">📈</span>
+            <div class="product-body">
+              <p class="product-name">InvestasiKu</p>
+              <p class="product-desc">Materi edukasi dan simulasi terkait keuangan.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">🎓</span>
+            <div class="product-body">
+              <p class="product-name">StudentOS</p>
+              <p class="product-desc">Alat bantu produktivitas akademik pengguna.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">💰</span>
+            <div class="product-body">
+              <p class="product-name">BudgetKu</p>
+              <p class="product-desc">Pencatatan dan pengelolaan anggaran pribadi.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">💼</span>
+            <div class="product-body">
+              <p class="product-name">Kerja &amp; Magang Hub</p>
+              <p class="product-desc">Informasi lowongan kerja dan kesempatan magang.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">📚</span>
+            <div class="product-body">
+              <p class="product-name">StudyFlow</p>
+              <p class="product-desc">Pengelolaan jadwal dan kebiasaan belajar.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">📝</span>
+            <div class="product-body">
+              <p class="product-name">PaperHelper</p>
+              <p class="product-desc">Alat bantu penyusunan dan peninjauan tulisan.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">🕵️</span>
+            <div class="product-body">
+              <p class="product-name">Mystery Case Archive</p>
+              <p class="product-desc">Permainan investigasi bertema kasus misteri.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">🔐</span>
+            <div class="product-body">
+              <p class="product-name">Cybersecurity Learning Lab</p>
+              <p class="product-desc">Materi dan simulasi pembelajaran keamanan siber.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">🏠</span>
+            <div class="product-body">
+              <p class="product-name">KostKu</p>
+              <p class="product-desc">Pencatatan informasi hunian dan biaya terkait.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">🛠️</span>
+            <div class="product-body">
+              <p class="product-name">Android Diagnostic Lab</p>
+              <p class="product-desc">Alat bantu pemeriksaan informasi perangkat Android.</p>
+            </div>
+          </div>
+          <div class="product-item">
+            <span class="product-icon" aria-hidden="true">📝</span>
+            <div class="product-body">
+              <p class="product-name">Document &amp; Text Toolkit</p>
+              <p class="product-desc">Perkakas pengolahan dokumen dan teks.</p>
+            </div>
+          </div>
+        </div>
+        <p>
+          Daftar di atas dapat diperbarui seiring dengan bertambahnya produk baru yang
+          dikembangkan AppHub.ID. Fitur tertentu dapat tersedia atau berubah sesuai versi
+          produk yang digunakan oleh pengguna.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">1.5</span>Siapa yang Dianggap Sebagai Pengguna</h3>
+        <p>
+          Pengguna adalah setiap individu yang mengunduh, memasang, mengakses, atau
+          menggunakan produk AppHub.ID dengan cara apa pun, baik secara langsung maupun
+          tidak langsung, termasuk melalui perangkat yang dimiliki, dikuasai, atau
+          digunakan oleh individu tersebut.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">1.6</span>Hubungan Antara Pengguna dan AppHub.ID</h3>
+        <p>
+          Penggunaan produk AppHub.ID tidak menciptakan hubungan kemitraan, keagenan,
+          hubungan kerja, atau usaha patungan antara pengguna dan AppHub.ID, kecuali
+          secara tegas dinyatakan lain dalam perjanjian terpisah yang sah.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">1.7</span>Pentingnya Membaca Seluruh Ketentuan</h3>
+        <p>
+          Dokumen ini merupakan satu kesatuan yang saling terkait. Pengguna dianjurkan
+          membaca setiap pasal secara utuh agar memahami hak, batasan, dan konsekuensi
+          yang timbul dari penggunaan produk AppHub.ID.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 2 ============ -->
+    <article class="section" id="pasal-2">
+      <div class="section-head">
+        <div class="section-num">02</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 2</p>
+          <h2 class="section-title">Definisi</h2>
+        </div>
+      </div>
+
+      <p>
+        Untuk keperluan dokumen ini, istilah-istilah berikut memiliki arti sebagaimana
+        diuraikan di bawah ini, kecuali konteks kalimat secara jelas menentukan lain.
+      </p>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.1 AppHub.ID</h3>
+        <p>
+          AppHub.ID merujuk pada pengembang perangkat lunak independen yang mengembangkan,
+          memelihara, dan mendistribusikan produk-produk digital yang diatur dalam dokumen
+          ini.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.2 Produk</h3>
+        <p>
+          Produk adalah seluruh aplikasi, permainan, layanan, materi digital, fitur, dan
+          elemen lain yang dikembangkan atau diterbitkan oleh AppHub.ID.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.3 Aplikasi</h3>
+        <p>
+          Aplikasi adalah perangkat lunak yang dirancang untuk dijalankan pada perangkat
+          bergerak maupun perangkat komputasi lain yang didukung.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.4 Website</h3>
+        <p>
+          Website adalah halaman digital resmi yang diterbitkan AppHub.ID, termasuk
+          halaman Ketentuan Penggunaan ini.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.5 Game</h3>
+        <p>
+          Game adalah produk interaktif yang dirancang untuk tujuan hiburan, eksplorasi
+          cerita, atau simulasi, yang dikembangkan oleh AppHub.ID.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.6 Pengguna</h3>
+        <p>
+          Pengguna adalah individu yang mengakses atau menggunakan produk AppHub.ID
+          sebagaimana dijelaskan dalam Pasal 1.5.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.7 Konten</h3>
+        <p>
+          Konten mencakup semua bentuk materi, termasuk teks, gambar, grafik, ikon,
+          ilustrasi, audio, video, animasi, kode, serta elemen visual dan interaktif
+          lainnya.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.8 Konten AppHub.ID</h3>
+        <p>
+          Konten AppHub.ID adalah seluruh materi yang dibuat, dimiliki, atau dilisensikan
+          oleh AppHub.ID dan disertakan dalam produk, termasuk namun tidak terbatas pada
+          desain, kode, antarmuka, dan aset visual.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.9 Konten Pengguna</h3>
+        <p>
+          Konten Pengguna adalah materi yang dimasukkan, dibuat, atau dihasilkan oleh
+          pengguna melalui fitur produk tertentu, apabila fitur tersebut tersedia.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.10 Perangkat</h3>
+        <p>
+          Perangkat adalah peralatan elektronik, termasuk telepon pintar, tablet, dan
+          perangkat lain yang kompatibel, yang digunakan untuk mengakses produk
+          AppHub.ID.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.11 Layanan</h3>
+        <p>
+          Layanan mencakup fungsi, fasilitas, dan kapabilitas yang disediakan melalui
+          produk AppHub.ID.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.12 Pihak Ketiga</h3>
+        <p>
+          Pihak Ketiga adalah entitas, individu, atau layanan di luar AppHub.ID yang
+          mungkin terkait dengan produk, baik secara langsung maupun tidak langsung.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.13 Pembaruan</h3>
+        <p>
+          Pembaruan mencakup revisi, perbaikan, tambalan (<em>patch</em>), peningkatan,
+          atau perubahan versi yang dirilis AppHub.ID untuk produknya.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.14 Materi Digital</h3>
+        <p>
+          Materi Digital adalah konten non-fisik yang disediakan sebagai bagian dari
+          produk, seperti teks edukatif, audio, gambar, dan elemen interaktif.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.15 Pelanggaran</h3>
+        <p>
+          Pelanggaran adalah tindakan atau kelalaian yang bertentangan dengan ketentuan
+          dalam dokumen ini, hukum yang berlaku, atau hak pihak lain.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">2.16 Akun</h3>
+        <p>
+          Akun adalah identitas pengguna yang memungkinkan akses terhadap fitur tertentu
+          apabila produk AppHub.ID menyediakan mekanisme akun. Tidak semua produk
+          AppHub.ID saat ini menyediakan sistem akun.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 3 ============ -->
+    <article class="section" id="pasal-3">
+      <div class="section-head">
+        <div class="section-num">03</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 3</p>
+          <h2 class="section-title">Penerimaan Ketentuan</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">3.1</span>Persetujuan Melalui Penggunaan</h3>
+        <p>
+          Dengan mengunduh, memasang, mengakses, atau menggunakan produk AppHub.ID,
+          pengguna dianggap telah membaca, memahami, dan menyetujui seluruh ketentuan
+          dalam dokumen ini. Persetujuan tersebut berlaku sejak penggunaan pertama dan
+          tetap berlaku selama pengguna menggunakan produk.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">3.2</span>Kewajiban Membaca Ketentuan</h3>
+        <p>
+          Pengguna berkewajiban membaca dokumen ini secara menyeluruh sebelum menggunakan
+          produk. Ketidaktahuan terhadap isi dokumen tidak dapat dijadikan alasan untuk
+          mengabaikan ketentuan yang berlaku.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">3.3</span>Ketentuan Tambahan untuk Produk Tertentu</h3>
+        <p>
+          Produk tertentu dapat memiliki ketentuan tambahan yang bersifat khusus. Apabila
+          terdapat perbedaan antara ketentuan umum dan ketentuan khusus produk, maka
+          ketentuan khusus produk berlaku sepanjang menyangkut aspek yang secara spesifik
+          diatur di dalamnya.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">3.4</span>Konsekuensi Jika Tidak Menyetujui</h3>
+        <p>
+          Apabila pengguna tidak menyetujui sebagian atau seluruh ketentuan dalam dokumen
+          ini, pengguna dianjurkan untuk tidak menggunakan produk AppHub.ID dan
+          menghentikan penggunaan produk yang telah dipasang.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">3.5</span>Pemberlakuan Perubahan Ketentuan</h3>
+        <p>
+          Perubahan terhadap dokumen ini dapat berlaku sejak dipublikasikannya versi
+          terbaru, atau pada tanggal tertentu yang ditetapkan AppHub.ID. Pengguna
+          dianjurkan untuk meninjau dokumen ini secara berkala.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 4 ============ -->
+    <article class="section" id="pasal-4">
+      <div class="section-head">
+        <div class="section-num">04</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 4</p>
+          <h2 class="section-title">Ruang Lingkup Produk AppHub.ID</h2>
+        </div>
+      </div>
+
+      <p>
+        AppHub.ID mengembangkan berbagai jenis produk digital dengan karakteristik,
+        tujuan, dan fungsi yang berbeda-beda. Setiap produk memiliki pendekatan
+        penggunaan yang dapat berbeda, dan setiap pengguna bertanggung jawab untuk
+        memahami karakteristik produk yang digunakannya. Fitur tertentu dapat tersedia
+        atau berubah sesuai versi produk.
+      </p>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.1 Portal Wilayah Perawang</h3>
+        <p>
+          Produk ini menyajikan informasi umum terkait wilayah, lokasi, fasilitas, dan
+          data daerah. Informasi disediakan sebagai sarana pengetahuan dan dapat
+          berubah seiring waktu.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.2 InvestasiKu</h3>
+        <p>
+          Produk ini menyajikan materi edukasi dan simulasi terkait keuangan. Materi
+          disediakan untuk keperluan pembelajaran dan tidak dimaksudkan sebagai dasar
+          pengambilan keputusan keuangan.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.3 StudentOS</h3>
+        <p>
+          Produk ini dirancang untuk membantu pengguna mengelola aktivitas akademik,
+          termasuk jadwal, catatan, dan materi belajar, sebagai alat bantu produktivitas.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.4 BudgetKu</h3>
+        <p>
+          Produk ini membantu pengguna mencatat dan mengelola anggaran pribadi dengan
+          pendekatan sederhana dan praktis.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.5 Kerja &amp; Magang Hub</h3>
+        <p>
+          Produk ini menyajikan informasi terkait lowongan kerja dan kesempatan magang
+          yang dapat berubah dari waktu ke waktu. AppHub.ID tidak menjamin ketersediaan,
+          keakuratan, atau kelayakan informasi yang ditampilkan.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.6 StudyFlow</h3>
+        <p>
+          Produk ini dirancang untuk membantu pengguna mengatur jadwal belajar dan
+          kebiasaan akademik secara lebih terstruktur.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.7 PaperHelper</h3>
+        <p>
+          Produk ini menyediakan alat bantu dalam penyusunan dan peninjauan tulisan,
+          termasuk pemeriksaan struktur dan pengorganisasian ide.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.8 Mystery Case Archive</h3>
+        <p>
+          Produk ini merupakan permainan bertema investigasi kasus misteri yang dapat
+          bersifat fiktif atau simulatif.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.9 Cybersecurity Learning Lab</h3>
+        <p>
+          Produk ini menyediakan materi dan simulasi untuk pembelajaran keamanan siber
+          dalam lingkungan terkendali.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.10 KostKu</h3>
+        <p>
+          Produk ini membantu pengguna mencatat informasi terkait hunian, biaya, dan
+          pengeluaran terkait.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.11 Android Diagnostic Lab</h3>
+        <p>
+          Produk ini menyajikan alat bantu pemeriksaan informasi perangkat Android
+          berdasarkan data yang tersedia pada perangkat pengguna.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title">4.12 Document &amp; Text Toolkit</h3>
+        <p>
+          Produk ini menyediakan perkakas untuk pengolahan dokumen dan teks untuk
+          keperluan umum.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 5 ============ -->
+    <article class="section" id="pasal-5">
+      <div class="section-head">
+        <div class="section-num">05</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 5</p>
+          <h2 class="section-title">Kelayakan Penggunaan</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">5.1</span>Usia Pengguna</h3>
+        <p>
+          Pengguna dianjurkan memiliki kecakapan hukum yang memadai untuk menyetujui
+          dokumen ini. Persyaratan usia minimum dapat berbeda-beda berdasarkan hukum
+          yang berlaku di wilayah pengguna serta ketentuan platform distribusi yang
+          digunakan.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">5.2</span>Penggunaan oleh Anak atau Pengguna di Bawah Umur</h3>
+        <p>
+          Apabila pengguna belum mencapai usia dewasa menurut hukum yang berlaku di
+          wilayahnya, pengguna dianjurkan menggunakan produk dengan pengetahuan,
+          bimbingan, atau izin dari orang tua atau wali yang sah.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">5.3</span>Tanggung Jawab Pengguna</h3>
+        <p>
+          Pengguna bertanggung jawab penuh atas penggunaan produk AppHub.ID, termasuk
+          atas segala konsekuensi yang timbul dari penggunaan tersebut.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">5.4</span>Kepatuhan terhadap Hukum</h3>
+        <p>
+          Pengguna wajib mematuhi seluruh hukum dan peraturan yang berlaku di wilayah
+          masing-masing saat menggunakan produk AppHub.ID.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 6 ============ -->
+    <article class="section" id="pasal-6">
+      <div class="section-head">
+        <div class="section-num">06</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 6</p>
+          <h2 class="section-title">Lisensi Penggunaan</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">6.1</span>Hak Penggunaan Terbatas</h3>
+        <p>
+          AppHub.ID memberikan kepada pengguna hak penggunaan yang terbatas, tidak
+          eksklusif, dan tidak dapat dipindahtangankan atas produk AppHub.ID, semata-mata
+          untuk keperluan penggunaan pribadi yang sah sesuai dengan ketentuan dalam
+          dokumen ini.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">6.2</span>Batas Penggunaan</h3>
+        <p>
+          Hak penggunaan yang diberikan tidak mencakup hak untuk memperbanyak,
+          mendistribusikan, menjual, menyewakan, atau memodifikasi produk, kecuali
+          apabila secara tegas diizinkan oleh AppHub.ID atau diperbolehkan oleh hukum
+          yang berlaku.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">6.3</span>Larangan Klaim Kepemilikan</h3>
+        <p>
+          Pengguna tidak memperoleh hak kepemilikan atas produk AppHub.ID. Seluruh hak
+          yang tidak secara tegas diberikan dalam dokumen ini tetap berada pada
+          AppHub.ID atau pihak yang berhak.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">6.4</span>Larangan Penjualan Ulang</h3>
+        <p>
+          Pengguna dilarang menjual, menyewakan, melisensikan ulang, atau mengalihkan
+          akses terhadap produk AppHub.ID tanpa izin tertulis dari AppHub.ID.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 7 ============ -->
+    <article class="section" id="pasal-7">
+      <div class="section-head">
+        <div class="section-num">07</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 7</p>
+          <h2 class="section-title">Hak Kekayaan Intelektual</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">7.1</span>Kepemilikan atas Produk</h3>
+        <p>
+          Seluruh elemen dalam produk AppHub.ID merupakan milik AppHub.ID atau pihak
+          yang secara sah memberikan lisensi kepada AppHub.ID. Kepemilikan tersebut
+          mencakup, namun tidak terbatas pada:
+        </p>
+        <ul>
+          <li>Nama, logo, dan identitas visual AppHub.ID;</li>
+          <li>Kode sumber, struktur program, dan arsitektur teknis;</li>
+          <li>Desain antarmuka, tata letak, dan pengalaman pengguna;</li>
+          <li>Teks, ilustrasi, grafik, dan ikon;</li>
+          <li>Elemen audio dan efek suara apabila tersedia;</li>
+          <li>Aset permainan dan elemen interaktif lainnya;</li>
+          <li>Struktur dan materi yang membentuk keseluruhan produk.</li>
+        </ul>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">7.2</span>Tidak Ada Pengalihan Kepemilikan</h3>
+        <p>
+          Penggunaan produk AppHub.ID tidak mengalihkan kepemilikan atas hak kekayaan
+          intelektual kepada pengguna. Pengguna hanya memperoleh hak penggunaan terbatas
+          sebagaimana dijelaskan dalam Pasal 6.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">7.3</span>Larangan Penggunaan Tanpa Izin</h3>
+        <p>
+          Pengguna dilarang menggunakan elemen milik AppHub.ID untuk keperluan komersial,
+          promosi, atau publikasi tanpa izin tertulis dari AppHub.ID.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 8 ============ -->
+    <article class="section" id="pasal-8">
+      <div class="section-head">
+        <div class="section-num">08</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 8</p>
+          <h2 class="section-title">Aturan Penggunaan yang Diperbolehkan</h2>
+        </div>
+      </div>
+
+      <p>
+        Pengguna diperbolehkan menggunakan produk AppHub.ID untuk tujuan yang sah dan
+        wajar, termasuk namun tidak terbatas pada:
+      </p>
+      <ul>
+        <li>Penggunaan pribadi untuk keperluan belajar, bekerja, atau hiburan;</li>
+        <li>Pemanfaatan fitur sesuai dengan fungsi yang dimaksudkan;</li>
+        <li>Penyimpanan data pribadi dalam lingkup perangkat pengguna;</li>
+        <li>Pembagian tangkapan layar (<em>screenshot</em>) secara wajar untuk keperluan diskusi, ulasan, atau edukasi, sepanjang tidak merugikan AppHub.ID;</li>
+        <li>Penggunaan sebagai bahan pembelajaran pribadi dengan tetap menghormati hak kekayaan intelektual.</li>
+      </ul>
+      <p>
+        Contoh penggunaan di atas bersifat ilustratif dan tidak membatasi hak pengguna
+        untuk menggunakan produk secara sah sepanjang tidak bertentangan dengan dokumen
+        ini.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 9 ============ -->
+    <article class="section" id="pasal-9">
+      <div class="section-head">
+        <div class="section-num">09</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 9</p>
+          <h2 class="section-title">Larangan Penggunaan</h2>
+        </div>
+      </div>
+
+      <p>
+        Pengguna dilarang melakukan tindakan berikut, baik secara langsung maupun tidak
+        langsung, melalui atau terhadap produk AppHub.ID:
+      </p>
+      <ul>
+        <li>Membongkar, membongkar pasang, atau memodifikasi produk dengan cara yang melanggar ketentuan hukum;</li>
+        <li>Melakukan <em>reverse engineering</em> sejauh tindakan tersebut dilarang oleh hukum yang berlaku;</li>
+        <li>Mengeksploitasi kerentanan atau celah keamanan untuk memperoleh keuntungan tidak sah;</li>
+        <li>Memanipulasi sistem, data, atau mekanisme internal produk;</li>
+        <li>Menghindari, mematikan, atau memanipulasi mekanisme keamanan yang diterapkan;</li>
+        <li>Menggunakan produk untuk kegiatan ilegal atau melanggar hukum;</li>
+        <li>Menyalahgunakan konten milik AppHub.ID untuk keperluan yang merugikan pihak lain;</li>
+        <li>Mendistribusikan ulang produk secara ilegal;</li>
+        <li>Memodifikasi produk tanpa izin tertulis dari AppHub.ID;</li>
+        <li>Menyamar sebagai AppHub.ID atau mengatasnamakan AppHub.ID secara tidak sah;</li>
+        <li>Menggunakan produk untuk merugikan, mengancam, atau menipu pihak lain;</li>
+        <li>Menggunakan sistem otomatis yang membebani layanan tanpa izin;</li>
+        <li>Menggunakan produk untuk tujuan yang melanggar hukum yang berlaku di wilayah pengguna.</li>
+      </ul>
+      <div class="callout">
+        <p><strong>Catatan:</strong> Daftar di atas bersifat tidak terbatas. Tindakan lain yang
+        secara wajar dapat dianggap sebagai penyalahgunaan juga dilarang, meskipun tidak
+        disebutkan secara eksplisit.</p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 10 ============ -->
+    <article class="section" id="pasal-10">
+      <div class="section-head">
+        <div class="section-num">10</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 10</p>
+          <h2 class="section-title">Konten Pengguna</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">10.1</span>Ketersediaan Fitur Konten Pengguna</h3>
+        <p>
+          Tidak semua produk AppHub.ID menyediakan fitur yang memungkinkan pengguna
+          memasukkan atau menghasilkan konten. Ketentuan dalam pasal ini berlaku hanya
+          apabila fitur tersebut tersedia pada produk tertentu.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">10.2</span>Tanggung Jawab atas Konten</h3>
+        <p>
+          Pengguna bertanggung jawab penuh atas konten yang dimasukkan atau dihasilkan
+          melalui produk AppHub.ID. Pengguna menjamin bahwa konten tersebut tidak
+          melanggar hukum, tidak melanggar hak pihak lain, dan tidak bersifat merugikan.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">10.3</span>Hak Pengguna atas Kontennya</h3>
+        <p>
+          Pengguna tetap memiliki hak atas konten yang dibuatnya, sepanjang tidak
+          bertentangan dengan ketentuan ini. Apabila produk memerlukan lisensi tertentu
+          untuk menampilkan konten pengguna, lisensi tersebut bersifat terbatas dan
+          hanya digunakan untuk keperluan operasional produk.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">10.4</span>Konten Ilegal, Berbahaya, atau Melanggar Hak</h3>
+        <p>
+          Pengguna dilarang memasukkan atau menghasilkan konten yang bersifat ilegal,
+          berbahaya, menyesatkan, melanggar hak kekayaan intelektual, atau melanggar
+          hak privasi pihak lain.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">10.5</span>Tindakan terhadap Konten yang Melanggar</h3>
+        <p>
+          AppHub.ID berhak mengambil tindakan yang wajar terhadap konten yang diduga
+          melanggar ketentuan ini, termasuk penghapusan konten atau pembatasan akses.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 11 ============ -->
+    <article class="section" id="pasal-11">
+      <div class="section-head">
+        <div class="section-num">11</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 11</p>
+          <h2 class="section-title">Akun Pengguna</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">11.1</span>Ketentuan Umum</h3>
+        <p>
+          Apabila produk AppHub.ID di masa mendatang menyediakan sistem akun, ketentuan
+          dalam pasal ini berlaku sebagai kerangka umum. Saat ini, tidak semua produk
+          AppHub.ID menyediakan sistem akun.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">11.2</span>Keamanan Akun</h3>
+        <p>
+          Pengguna bertanggung jawab menjaga kerahasiaan kredensial akun, termasuk nama
+          pengguna dan kata sandi. Pengguna wajib segera menghubungi AppHub.ID apabila
+          mengetahui adanya penggunaan tidak sah atas akunnya.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">11.3</span>Larangan Berbagi Akun</h3>
+        <p>
+          Apabila ketentuan produk menyatakan demikian, pengguna dilarang berbagi akun
+          dengan pihak lain. Penggunaan akun oleh pihak lain dapat dianggap sebagai
+          pelanggaran.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">11.4</span>Penangguhan dan Penutupan Akun</h3>
+        <p>
+          AppHub.ID dapat menangguhkan atau menutup akun apabila terdapat indikasi
+          pelanggaran terhadap ketentuan ini atau hukum yang berlaku.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 12 ============ -->
+    <article class="section" id="pasal-12">
+      <div class="section-head">
+        <div class="section-num">12</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 12</p>
+          <h2 class="section-title">Informasi Edukasi</h2>
+        </div>
+      </div>
+
+      <p>
+        Beberapa produk AppHub.ID, termasuk namun tidak terbatas pada InvestasiKu,
+        StudentOS, StudyFlow, PaperHelper, Cybersecurity Learning Lab, Android
+        Diagnostic Lab, serta Document &amp; Text Toolkit, menyajikan materi yang
+        bersifat edukatif, simulatif, atau informatif. Materi tersebut disediakan untuk
+        membantu pemahaman pengguna dan tidak dimaksudkan sebagai pengganti nasihat
+        profesional.
+      </p>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">12.1</span>Bukan Nasihat Profesional</h3>
+        <p>
+          Informasi edukatif yang disediakan tidak otomatis merupakan nasihat keuangan,
+          nasihat investasi, nasihat hukum, nasihat medis, atau diagnosis perangkat yang
+          bersifat mutlak.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">12.2</span>Keterbatasan Materi</h3>
+        <p>
+          Materi edukatif dapat memiliki keterbatasan cakupan, kedalaman, dan
+          penyederhanaan yang disesuaikan untuk keperluan pembelajaran umum. Pengguna
+          dianjurkan melakukan pemeriksaan tambahan sebelum mengambil keputusan penting.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">12.3</span>Tanggung Jawab Pengguna</h3>
+        <p>
+          Pengguna bertanggung jawab penuh atas keputusan yang diambil berdasarkan
+          informasi dari produk AppHub.ID. AppHub.ID tidak bertanggung jawab atas
+          konsekuensi yang timbul dari penggunaan informasi tersebut.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 13 ============ -->
+    <article class="section" id="pasal-13">
+      <div class="section-head">
+        <div class="section-num">13</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 13</p>
+          <h2 class="section-title">InvestasiKu — Ketentuan Khusus</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">13.1</span>Sifat Informasi</h3>
+        <p>
+          Informasi yang disajikan dalam InvestasiKu bersifat edukatif. Materi tersebut
+          tidak dimaksudkan sebagai dasar pengambilan keputusan keuangan dan tidak
+          menggantikan konsultasi dengan penasihat keuangan profesional.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">13.2</span>Simulasi Bukan Transaksi Nyata</h3>
+        <p>
+          Simulasi, angka, atau contoh yang ditampilkan tidak mewakili transaksi
+          keuangan nyata dan tidak menjamin hasil apa pun di dunia nyata.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">13.3</span>Pemeriksaan Mandiri</h3>
+        <p>
+          Pengguna dianjurkan melakukan pemeriksaan mandiri terhadap setiap informasi
+          yang diterima sebelum mengambil keputusan finansial.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">13.4</span>Bukan Penasihat Keuangan</h3>
+        <p>
+          AppHub.ID bukan penasihat keuangan hanya karena menyediakan materi edukasi
+          melalui InvestasiKu. Risiko keputusan finansial sepenuhnya berada pada
+          pengguna.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 14 ============ -->
+    <article class="section" id="pasal-14">
+      <div class="section-head">
+        <div class="section-num">14</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 14</p>
+          <h2 class="section-title">StudentOS, StudyFlow, PaperHelper</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">14.1</span>Alat Bantu Akademik</h3>
+        <p>
+          StudentOS, StudyFlow, dan PaperHelper merupakan alat bantu produktivitas
+          akademik. Produk-produk ini tidak menggantikan tanggung jawab akademik
+          pengguna.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">14.2</span>Tanggung Jawab Atas Tugas</h3>
+        <p>
+          Pengguna tetap bertanggung jawab atas tugas, tulisan, dan karya akademik yang
+          diserahkan kepada pihak lain. Hasil yang dihasilkan melalui alat bantu harus
+          diperiksa kembali oleh pengguna sebelum digunakan.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">14.3</span>Kepatuhan terhadap Kebijakan Institusi</h3>
+        <p>
+          Pengguna wajib mematuhi kebijakan institusi pendidikan masing-masing. Alat
+          bantu tidak boleh digunakan untuk kecurangan akademik atau tindakan yang
+          melanggar integritas akademik.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">14.4</span>Pemeriksaan Hasil Otomatis</h3>
+        <p>
+          Hasil yang dihasilkan secara otomatis perlu ditinjau dan disesuaikan oleh
+          pengguna. Akurasi hasil tidak dapat dijamin secara mutlak.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 15 ============ -->
+    <article class="section" id="pasal-15">
+      <div class="section-head">
+        <div class="section-num">15</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 15</p>
+          <h2 class="section-title">Cybersecurity Learning Lab</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">15.1</span>Tujuan Pembelajaran</h3>
+        <p>
+          Cybersecurity Learning Lab ditujukan untuk pembelajaran, simulasi, dan
+          pemahaman konsep keamanan siber dalam lingkungan yang terkendali.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">15.2</span>Larangan Penyalahgunaan Pengetahuan</h3>
+        <p>
+          Pengguna dilarang menggunakan pengetahuan, materi, atau fitur yang diperoleh
+          dari produk ini untuk menyerang sistem tanpa izin atau melakukan aktivitas
+          ilegal.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">15.3</span>Tanggung Jawab Pengguna</h3>
+        <p>
+          Pengguna bertanggung jawab penuh atas penggunaan pengetahuan yang diperoleh
+          dari Cybersecurity Learning Lab. AppHub.ID tidak bertanggung jawab atas
+          penyalahgunaan pengetahuan tersebut oleh pengguna.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 16 ============ -->
+    <article class="section" id="pasal-16">
+      <div class="section-head">
+        <div class="section-num">16</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 16</p>
+          <h2 class="section-title">Android Diagnostic Lab</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">16.1</span>Keterbatasan Diagnostik</h3>
+        <p>
+          Informasi diagnostik yang dihasilkan oleh Android Diagnostic Lab memiliki
+          keterbatasan dan tidak selalu menggantikan pemeriksaan oleh teknisi atau
+          produsen perangkat.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">16.2</span>Tidak Menjamin Akurasi Absolut</h3>
+        <p>
+          AppHub.ID tidak menjamin akurasi absolut hasil diagnosis. Pengguna dianjurkan
+          melakukan pemeriksaan tambahan sebelum mengambil tindakan terhadap perangkat.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">16.3</span>Risiko Tindakan Pengguna</h3>
+        <p>
+          Segala tindakan yang diambil pengguna berdasarkan hasil diagnosis menjadi
+          tanggung jawab pengguna sepenuhnya.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 17 ============ -->
+    <article class="section" id="pasal-17">
+      <div class="section-head">
+        <div class="section-num">17</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 17</p>
+          <h2 class="section-title">Portal Wilayah Perawang</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">17.1</span>Sifat Informasi Wilayah</h3>
+        <p>
+          Informasi wilayah, lokasi, fasilitas, data umum, dan informasi daerah yang
+          disajikan dalam Portal Wilayah Perawang dapat berubah dari waktu ke waktu.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">17.2</span>Keterbatasan Pembaruan</h3>
+        <p>
+          AppHub.ID tidak menjamin bahwa seluruh informasi disajikan secara
+          <em>real-time</em> atau selalu akurat, kecuali dinyatakan secara tegas untuk
+          fitur tertentu.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">17.3</span>Pemeriksaan Mandiri</h3>
+        <p>
+          Pengguna dianjurkan melakukan verifikasi mandiri terhadap informasi penting
+          melalui sumber resmi sebelum menggunakannya untuk keperluan tertentu.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 18 ============ -->
+    <article class="section" id="pasal-18">
+      <div class="section-head">
+        <div class="section-num">18</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 18</p>
+          <h2 class="section-title">BudgetKu dan KostKu</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">18.1</span>Alat Pencatatan</h3>
+        <p>
+          BudgetKu dan KostKu merupakan alat bantu pencatatan dan kalkulator yang
+          dirancang untuk membantu pengelolaan informasi pribadi.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">18.2</span>Tidak Menjamin Hasil Keuangan</h3>
+        <p>
+          AppHub.ID tidak menjamin hasil keuangan tertentu dari penggunaan produk ini.
+          Keputusan keuangan tetap berada pada pengguna.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">18.3</span>Akurasi Data Pengguna</h3>
+        <p>
+          Akurasi laporan dan perhitungan bergantung pada data yang dimasukkan pengguna.
+          Pengguna bertanggung jawab atas ketepatan data tersebut.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 19 ============ -->
+    <article class="section" id="pasal-19">
+      <div class="section-head">
+        <div class="section-num">19</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 19</p>
+          <h2 class="section-title">Kerja &amp; Magang Hub</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">19.1</span>Perubahan Informasi Lowongan</h3>
+        <p>
+          Informasi lowongan kerja dan kesempatan magang dapat berubah, dibuka, atau
+          ditutup tanpa pemberitahuan sebelumnya.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">19.2</span>Bukan Pihak Pemberi Kerja</h3>
+        <p>
+          AppHub.ID tidak otomatis menjadi pihak pemberi kerja. AppHub.ID tidak
+          menyediakan jaminan atas hubungan kerja antara pengguna dan pihak pemberi
+          kerja.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">19.3</span>Verifikasi Mandiri</h3>
+        <p>
+          Pengguna wajib melakukan verifikasi terhadap pihak yang menawarkan pekerjaan
+          sebelum memberikan informasi pribadi atau mengambil tindakan lain.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">19.4</span>Tidak Menjamin Penerimaan</h3>
+        <p>
+          AppHub.ID tidak menjamin pengguna akan diterima bekerja atau magang melalui
+          informasi yang disajikan.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 20 ============ -->
+    <article class="section" id="pasal-20">
+      <div class="section-head">
+        <div class="section-num">20</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 20</p>
+          <h2 class="section-title">Mystery Case Archive</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">20.1</span>Sifat Fiktif atau Simulatif</h3>
+        <p>
+          Kasus, cerita, dan materi dalam Mystery Case Archive dapat bersifat fiktif
+          atau simulatif. Materi permainan tidak otomatis merupakan fakta dunia nyata.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">20.2</span>Penggunaan yang Bertanggung Jawab</h3>
+        <p>
+          Pengguna dianjurkan menggunakan produk ini sebagai sarana hiburan dan
+          pembelajaran yang bertanggung jawab.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">20.3</span>Kesamaan Nama atau Peristiwa</h3>
+        <p>
+          Apabila terdapat kesamaan dengan nama, tempat, atau peristiwa nyata, hal
+          tersebut merupakan kebetulan dan tidak dimaksudkan untuk menggambarkan pihak
+          tertentu.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 21 ============ -->
+    <article class="section" id="pasal-21">
+      <div class="section-head">
+        <div class="section-num">21</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 21</p>
+          <h2 class="section-title">Document &amp; Text Toolkit</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">21.1</span>Pemeriksaan Hasil</h3>
+        <p>
+          Hasil pengolahan teks atau dokumen yang dihasilkan oleh Document &amp; Text
+          Toolkit harus diperiksa pengguna sebelum digunakan untuk keperluan resmi.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">21.2</span>Keterbatasan Pengolahan</h3>
+        <p>
+          Kemampuan pengolahan dokumen dan teks dapat berbeda tergantung pada format,
+          jenis, dan kompleksitas materi yang diolah.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">21.3</span>Tanggung Jawab Pengguna</h3>
+        <p>
+          Pengguna bertanggung jawab penuh atas penggunaan hasil pengolahan dokumen
+          atau teks, termasuk atas dampak yang timbul dari penggunaannya.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 22 ============ -->
+    <article class="section" id="pasal-22">
+      <div class="section-head">
+        <div class="section-num">22</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 22</p>
+          <h2 class="section-title">Akurasi Informasi</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">22.1</span>Perubahan Data</h3>
+        <p>
+          Data dan informasi yang ditampilkan dalam produk AppHub.ID dapat berubah
+          seiring waktu. Perubahan tersebut dapat disebabkan oleh pembaruan internal,
+          perubahan sumber, atau faktor lain.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">22.2</span>Kesalahan Manusia</h3>
+        <p>
+          Meskipun AppHub.ID berupaya menyajikan informasi yang akurat, kesalahan
+          manusia, keterbatasan sumber, dan keterbatasan teknis dapat terjadi.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">22.3</span>Perbedaan Versi</h3>
+        <p>
+          Informasi dapat berbeda antar versi produk. Pengguna dianjurkan menggunakan
+          versi terbaru untuk memperoleh informasi yang paling relevan.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">22.4</span>Kemungkinan Informasi Tidak Lagi Relevan</h3>
+        <p>
+          Informasi yang pernah akurat dapat menjadi tidak relevan seiring perubahan
+          kondisi. Pengguna bertanggung jawab menilai relevansi informasi tersebut.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 23 ============ -->
+    <article class="section" id="pasal-23">
+      <div class="section-head">
+        <div class="section-num">23</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 23</p>
+          <h2 class="section-title">Ketersediaan Layanan</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">23.1</span>Tidak Menjamin Ketersediaan Terus-Menerus</h3>
+        <p>
+          AppHub.ID tidak menjamin bahwa produk akan selalu tersedia, bebas gangguan,
+          bebas <em>bug</em>, atau kompatibel dengan seluruh perangkat dan versi sistem
+          operasi.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">23.2</span>Pemeliharaan dan Gangguan</h3>
+        <p>
+          Produk dapat mengalami pemeliharaan terjadwal maupun tidak terjadwal, serta
+          gangguan teknis yang berada di luar kendali AppHub.ID.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">23.3</span>Kompatibilitas Perangkat</h3>
+        <p>
+          Kompatibilitas produk dapat berbeda tergantung pada perangkat, versi sistem
+          operasi, dan konfigurasi perangkat pengguna.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 24 ============ -->
+    <article class="section" id="pasal-24">
+      <div class="section-head">
+        <div class="section-num">24</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 24</p>
+          <h2 class="section-title">Pembaruan Produk</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">24.1</span>Hak untuk Memperbarui</h3>
+        <p>
+          AppHub.ID berhak merilis pembaruan, tambalan, atau perubahan lain terhadap
+          produk, baik untuk menambah fitur, memperbaiki <em>bug</em>, meningkatkan
+          keamanan, maupun menyesuaikan dengan perubahan platform.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">24.2</span>Perubahan atau Penghapusan Fitur</h3>
+        <p>
+          Fitur tertentu dapat diubah, dikurangi, atau dihapus dalam pembaruan, sejalan
+          dengan kebutuhan teknis, kebijakan platform, atau pertimbangan lainnya.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">24.3</span>Ketergantungan pada Versi</h3>
+        <p>
+          Sebagian fitur dapat bergantung pada versi produk atau versi sistem operasi
+          tertentu. Pengguna dianjurkan menggunakan versi terbaru yang kompatibel
+          dengan perangkatnya.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">24.4</span>Pembaruan Sistem Operasi</h3>
+        <p>
+          Perubahan pada sistem operasi perangkat dapat memengaruhi fungsionalitas
+          produk. AppHub.ID akan berupaya menyesuaikan produk sejauh memungkinkan.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 25 ============ -->
+    <article class="section" id="pasal-25">
+      <div class="section-head">
+        <div class="section-num">25</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 25</p>
+          <h2 class="section-title">Produk dan Layanan Pihak Ketiga</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">25.1</span>Kemungkinan Penggunaan Pihak Ketiga</h3>
+        <p>
+          Suatu produk AppHub.ID dapat menggunakan layanan atau komponen pihak ketiga
+          untuk mendukung fungsionalitas tertentu.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">25.2</span>Ketentuan Pihak Ketiga</h3>
+        <p>
+          Layanan pihak ketiga dapat memiliki syarat dan ketentuan masing-masing yang
+          berlaku terpisah. Pengguna dianjurkan memahami ketentuan tersebut.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">25.3</span>Tanggung Jawab Pihak Ketiga</h3>
+        <p>
+          AppHub.ID tidak bertanggung jawab atas kebijakan, tindakan, atau kegagalan
+          layanan pihak ketiga yang berada di luar kendali AppHub.ID.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 26 ============ -->
+    <article class="section" id="pasal-26">
+      <div class="section-head">
+        <div class="section-num">26</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 26</p>
+          <h2 class="section-title">Tautan Eksternal</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">26.1</span>Tautan ke Layanan Eksternal</h3>
+        <p>
+          Produk atau website AppHub.ID dapat memuat tautan yang mengarah ke layanan
+          atau sumber di luar kendali AppHub.ID.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">26.2</span>Tanggung Jawab Pengguna</h3>
+        <p>
+          Pengguna bertanggung jawab untuk memperhatikan ketentuan dan kebijakan pihak
+          ketiga yang diakses melalui tautan eksternal.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">26.3</span>Keterbatasan Kendali</h3>
+        <p>
+          AppHub.ID tidak mengendalikan dan tidak bertanggung jawab atas konten,
+          keakuratan, atau praktik layanan eksternal yang ditautkan.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 27 ============ -->
+    <article class="section" id="pasal-27">
+      <div class="section-head">
+        <div class="section-num">27</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 27</p>
+          <h2 class="section-title">Perlindungan terhadap Penyalahgunaan</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">27.1</span>Hak Mengambil Tindakan</h3>
+        <p>
+          AppHub.ID berhak mengambil tindakan yang wajar terhadap dugaan penyalahgunaan
+          produk, termasuk tindakan teknis, administratif, maupun hukum sesuai ketentuan
+          yang berlaku.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">27.2</span>Pemeriksaan atas Dugaan Pelanggaran</h3>
+        <p>
+          AppHub.ID dapat melakukan pemeriksaan terhadap dugaan pelanggaran dengan
+          mempertimbangkan bukti yang tersedia dan menjaga kerahasiaan sesuai ketentuan
+          yang berlaku.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">27.3</span>Kerja Sama dengan Pihak Berwenang</h3>
+        <p>
+          Apabila diwajibkan oleh hukum, AppHub.ID dapat bekerja sama dengan pihak
+          berwenang terkait dugaan tindak pidana atau pelanggaran hukum.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 28 ============ -->
+    <article class="section" id="pasal-28">
+      <div class="section-head">
+        <div class="section-num">28</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 28</p>
+          <h2 class="section-title">Penangguhan atau Penghentian Akses</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">28.1</span>Kondisi yang Dapat Menyebabkan Pembatasan</h3>
+        <p>
+          AppHub.ID dapat membatasi, menangguhkan, atau menghentikan akses pengguna
+          terhadap produk, baik sebagian maupun seluruhnya, apabila terdapat indikasi
+          pelanggaran terhadap ketentuan ini atau hukum yang berlaku.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">28.2</span>Penghentian Layanan Produk</h3>
+        <p>
+          AppHub.ID dapat menghentikan pengembangan atau distribusi produk tertentu
+          sesuai pertimbangan internal, kebutuhan teknis, atau kebijakan platform.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">28.3</span>Konsekuensi</h3>
+        <p>
+          Pengguna tidak berhak menuntut kompensasi atas pembatasan atau penghentian
+          akses yang dilakukan secara sah sesuai ketentuan ini.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 29 ============ -->
+    <article class="section" id="pasal-29">
+      <div class="section-head">
+        <div class="section-num">29</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 29</p>
+          <h2 class="section-title">Disclaimer</h2>
+        </div>
+      </div>
+
+      <p>
+        Produk AppHub.ID disediakan berdasarkan kondisi yang tersedia pada saat
+        penggunaan. AppHub.ID tidak memberikan jaminan bahwa produk akan selalu
+        memenuhi harapan atau kebutuhan spesifik pengguna. AppHub.ID tetap berupaya
+        menyajikan produk yang bermanfaat dan berfungsi dengan baik, namun tidak dapat
+        menjamin bahwa produk akan selalu bebas dari kesalahan, gangguan, atau
+        keterbatasan.
+      </p>
+      <p>
+        Pengguna memahami bahwa penggunaan produk dilakukan atas kebijaksanaan dan
+        tanggung jawab pengguna. AppHub.ID tidak bertanggung jawab atas kerugian yang
+        timbul semata-mata karena penggunaan produk secara tidak sesuai dengan
+        ketentuan ini.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 30 ============ -->
+    <article class="section" id="pasal-30">
+      <div class="section-head">
+        <div class="section-num">30</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 30</p>
+          <h2 class="section-title">Batas Tanggung Jawab</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">30.1</span>Ruang Lingkup Batas Tanggung Jawab</h3>
+        <p>
+          Sejauh diperbolehkan oleh hukum yang berlaku, AppHub.ID tidak bertanggung
+          jawab atas kerugian tidak langsung, insidental, khusus, konsekuensial, atau
+          hukuman yang timbul dari penggunaan atau ketidakmampuan menggunakan produk.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">30.2</span>Keterbatasan yang Proporsional</h3>
+        <p>
+          Batas tanggung jawab ini tidak dimaksudkan untuk menghapus hak pengguna yang
+          dijamin oleh hukum yang berlaku. Apabila hukum yang berlaku membatasi
+          klausul semacam ini, maka batas tanggung jawab akan disesuaikan sejauh yang
+          diizinkan oleh hukum.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">30.3</span>Kesalahan Pengguna</h3>
+        <p>
+          AppHub.ID tidak bertanggung jawab atas kerugian yang disebabkan oleh kesalahan
+          pengguna, penggunaan produk yang tidak sesuai, atau pelanggaran ketentuan ini.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 31 ============ -->
+    <article class="section" id="pasal-31">
+      <div class="section-head">
+        <div class="section-num">31</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 31</p>
+          <h2 class="section-title">Ganti Rugi</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">31.1</span>Tanggung Jawab Pengguna</h3>
+        <p>
+          Pengguna bertanggung jawab untuk mengganti kerugian yang timbul akibat
+          pelanggaran terhadap ketentuan ini, sejauh pelanggaran tersebut menyebabkan
+          kerugian bagi AppHub.ID atau pihak lain.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">31.2</span>Pembatasan yang Wajar</h3>
+        <p>
+          Kewajiban ganti rugi ini diterapkan secara proporsional dan tidak dimaksudkan
+          untuk membebani pengguna secara tidak wajar. Besaran dan bentuk ganti rugi
+          disesuaikan dengan ketentuan hukum yang berlaku.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 32 ============ -->
+    <article class="section" id="pasal-32">
+      <div class="section-head">
+        <div class="section-num">32</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 32</p>
+          <h2 class="section-title">Keadaan di Luar Kendali</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">32.1</span>Contoh Keadaan di Luar Kendali</h3>
+        <p>
+          Keadaan di luar kendali mencakup, namun tidak terbatas pada, gangguan
+          jaringan, kegagalan layanan pihak ketiga, gangguan infrastruktur, bencana
+          alam, perubahan kebijakan platform, dan kondisi lain yang berada di luar
+          kendali yang wajar dari AppHub.ID.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">32.2</span>Konsekuensi</h3>
+        <p>
+          Apabila keadaan di luar kendali terjadi, AppHub.ID dapat menunda, membatasi,
+          atau menghentikan sementara layanan tanpa dianggap melakukan pelanggaran
+          terhadap dokumen ini.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 33 ============ -->
+    <article class="section" id="pasal-33">
+      <div class="section-head">
+        <div class="section-num">33</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 33</p>
+          <h2 class="section-title">Perubahan Terms of Use</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">33.1</span>Hak untuk Memperbarui</h3>
+        <p>
+          AppHub.ID dapat memperbarui dokumen ini dari waktu ke waktu sesuai kebutuhan
+          hukum, teknis, atau operasional.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">33.2</span>Versi Terbaru Menggantikan Versi Sebelumnya</h3>
+        <p>
+          Versi terbaru dari dokumen ini menggantikan seluruh versi sebelumnya sejak
+          tanggal publikasi atau tanggal efektif yang ditetapkan.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">33.3</span>Tanggal Pembaruan</h3>
+        <p>
+          Tanggal pembaruan dicantumkan secara jelas pada bagian atas dokumen ini untuk
+          memudahkan pengguna mengetahui versi yang berlaku.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">33.4</span>Pemberitahuan Perubahan Material</h3>
+        <p>
+          Apabila terjadi perubahan yang bersifat material, AppHub.ID dapat memberikan
+          informasi dengan cara yang wajar, misalnya melalui catatan rilis atau
+          pembaruan di dalam produk.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 34 ============ -->
+    <article class="section" id="pasal-34">
+      <div class="section-head">
+        <div class="section-num">34</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 34</p>
+          <h2 class="section-title">Severability</h2>
+        </div>
+      </div>
+
+      <p>
+        Apabila satu atau lebih ketentuan dalam dokumen ini dinyatakan tidak berlaku,
+        tidak sah, atau tidak dapat dilaksanakan oleh pihak yang berwenang, maka
+        ketentuan tersebut akan disesuaikan atau dipisahkan sejauh diperlukan. Ketentuan
+        lain dalam dokumen ini tetap berlaku sepanjang diizinkan oleh hukum yang
+        berlaku.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 35 ============ -->
+    <article class="section" id="pasal-35">
+      <div class="section-head">
+        <div class="section-num">35</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 35</p>
+          <h2 class="section-title">Waiver</h2>
+        </div>
+      </div>
+
+      <p>
+        Apabila AppHub.ID tidak menggunakan atau tidak menegakkan suatu hak pada satu
+        waktu tertentu, hal tersebut tidak berarti AppHub.ID melepaskan hak tersebut
+        untuk masa mendatang. Setiap penggunaan hak tetap menjadi kebijaksanaan
+        AppHub.ID sesuai ketentuan yang berlaku.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 36 ============ -->
+    <article class="section" id="pasal-36">
+      <div class="section-head">
+        <div class="section-num">36</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 36</p>
+          <h2 class="section-title">Pengalihan</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">36.1</span>Pengalihan oleh AppHub.ID</h3>
+        <p>
+          AppHub.ID dapat mengalihkan sebagian atau seluruh hak dan kewajibannya
+          berdasarkan dokumen ini kepada pihak lain, sepanjang diizinkan oleh hukum
+          yang berlaku.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">36.2</span>Pengalihan oleh Pengguna</h3>
+        <p>
+          Pengguna tidak dapat mengalihkan hak atau kewajibannya berdasarkan dokumen
+          ini tanpa persetujuan tertulis dari AppHub.ID.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 37 ============ -->
+    <article class="section" id="pasal-37">
+      <div class="section-head">
+        <div class="section-num">37</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 37</p>
+          <h2 class="section-title">Hubungan Para Pihak</h2>
+        </div>
+      </div>
+
+      <p>
+        Penggunaan produk AppHub.ID tidak otomatis menciptakan hubungan kemitraan,
+        keagenan, hubungan kerja, atau usaha patungan (<em>joint venture</em>) antara
+        pengguna dan AppHub.ID, kecuali secara tegas dinyatakan lain dalam perjanjian
+        terpisah yang sah.
+      </p>
+      <p>
+        Tidak ada pihak yang berwenang untuk membuat pernyataan, janji, atau komitmen
+        atas nama pihak lain tanpa persetujuan tertulis yang sah.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 38 ============ -->
+    <article class="section" id="pasal-38">
+      <div class="section-head">
+        <div class="section-num">38</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 38</p>
+          <h2 class="section-title">Hukum yang Berlaku</h2>
+        </div>
+      </div>
+
+      <p>
+        Dokumen ini ditafsirkan dan diberlakukan sesuai dengan hukum yang berlaku di
+        wilayah hukum berikut:
+      </p>
+      <div class="callout">
+        <p><strong>[WILAYAH HUKUM YANG BERLAKU]</strong></p>
+      </div>
+      <p>
+        Apabila wilayah hukum belum ditetapkan, maka ketentuan dalam dokumen ini
+        ditafsirkan sesuai hukum yang berlaku pada wilayah tempat AppHub.ID secara sah
+        menjalankan kegiatannya, sepanjang tidak bertentangan dengan hukum setempat
+        yang bersifat memaksa.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 39 ============ -->
+    <article class="section" id="pasal-39">
+      <div class="section-head">
+        <div class="section-num">39</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 39</p>
+          <h2 class="section-title">Penyelesaian Sengketa</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">39.1</span>Komunikasi Awal</h3>
+        <p>
+          Apabila terjadi perselisihan atau sengketa terkait dokumen ini atau produk
+          AppHub.ID, para pihak sepakat untuk terlebih dahulu mengupayakan penyelesaian
+          melalui komunikasi langsung secara musyawarah.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">39.2</span>Penyelesaian Secara Musyawarah</h3>
+        <p>
+          Komunikasi dan musyawarah dilakukan dengan itikad baik untuk mencapai
+          kesepakatan yang menguntungkan kedua pihak.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">39.3</span>Mekanisme Lanjutan</h3>
+        <p>
+          Apabila penyelesaian secara musyawarah tidak tercapai, para pihak dapat
+          menempuh mekanisme lain sesuai hukum yang berlaku, termasuk melalui lembaga
+          yang berwenang di wilayah hukum yang ditentukan.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 40 ============ -->
+    <article class="section" id="pasal-40">
+      <div class="section-head">
+        <div class="section-num">40</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 40</p>
+          <h2 class="section-title">Ketentuan Khusus Platform</h2>
+        </div>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">40.1</span>Distribusi Melalui Platform Pihak Ketiga</h3>
+        <p>
+          Aplikasi AppHub.ID dapat didistribusikan melalui platform pihak ketiga.
+          Dalam hal ini, penggunaan aplikasi juga tunduk pada ketentuan platform
+          tersebut.
+        </p>
+      </div>
+
+      <div class="subsection">
+        <h3 class="subsection-title"><span class="clause-num">40.2</span>Kesesuaian Ketentuan</h3>
+        <p>
+          Apabila terdapat perbedaan antara ketentuan dalam dokumen ini dan ketentuan
+          platform, maka ketentuan platform berlaku sepanjang menyangkut aspek yang
+          secara spesifik diatur di dalamnya.
+        </p>
+      </div>
+    </article>
+
+    <!-- ============ PASAL 41 ============ -->
+    <article class="section" id="pasal-41">
+      <div class="section-head">
+        <div class="section-num">41</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 41</p>
+          <h2 class="section-title">Ketentuan Produk</h2>
+        </div>
+      </div>
+
+      <p>
+        Ketentuan umum dalam dokumen ini dapat dilengkapi dengan ketentuan khusus
+        produk tertentu apabila dibutuhkan. Ketentuan khusus tersebut hanya berlaku
+        untuk produk yang bersangkutan dan tidak menggantikan ketentuan umum, kecuali
+        dinyatakan lain.
+      </p>
+      <p>
+        Apabila terdapat pertentangan antara ketentuan umum dan ketentuan khusus
+        produk, maka ketentuan khusus produk berlaku untuk aspek yang secara spesifik
+        diatur di dalamnya, sedangkan ketentuan umum tetap berlaku untuk aspek lain.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 42 ============ -->
+    <article class="section" id="pasal-42">
+      <div class="section-head">
+        <div class="section-num">42</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 42</p>
+          <h2 class="section-title">Tidak Ada Jaminan Hasil Tertentu</h2>
+        </div>
+      </div>
+
+      <p>
+        AppHub.ID tidak menjanjikan atau menjamin hasil tertentu dari penggunaan
+        produk, termasuk namun tidak terbatas pada:
+      </p>
+      <ul>
+        <li>Keuntungan finansial;</li>
+        <li>Kelulusan akademik;</li>
+        <li>Penerimaan kerja atau magang;</li>
+        <li>Peningkatan kondisi finansial;</li>
+        <li>Diagnosis perangkat yang sempurna;</li>
+        <li>Keberhasilan akademik;</li>
+        <li>Hasil spesifik lain yang bergantung pada faktor di luar kendali AppHub.ID.</li>
+      </ul>
+      <p>
+        Hasil penggunaan produk bergantung pada berbagai faktor, termasuk upaya
+        pengguna, kondisi eksternal, dan faktor lain yang tidak dapat dikendalikan oleh
+        AppHub.ID.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 43 ============ -->
+    <article class="section" id="pasal-43">
+      <div class="section-head">
+        <div class="section-num">43</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 43</p>
+          <h2 class="section-title">Tanggung Jawab Pengguna</h2>
+        </div>
+      </div>
+
+      <p>Pengguna bertanggung jawab untuk:</p>
+      <ul>
+        <li>Menggunakan produk secara sah dan sesuai dengan ketentuan ini;</li>
+        <li>Memberikan informasi yang benar apabila diminta oleh produk;</li>
+        <li>Menjaga perangkat dan data pribadi dari akses yang tidak sah;</li>
+        <li>Melakukan verifikasi terhadap informasi penting sebelum menggunakannya;</li>
+        <li>Memahami risiko penggunaan produk;</li>
+        <li>Menghormati hak pihak lain, termasuk hak kekayaan intelektual dan privasi;</li>
+        <li>Mematuhi hukum yang berlaku di wilayahnya.</li>
+      </ul>
+    </article>
+
+    <!-- ============ PASAL 44 ============ -->
+    <article class="section" id="pasal-44">
+      <div class="section-head">
+        <div class="section-num">44</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 44</p>
+          <h2 class="section-title">Keseluruhan Perjanjian</h2>
+        </div>
+      </div>
+
+      <p>
+        Dokumen ini merupakan keseluruhan ketentuan penggunaan antara pengguna dan
+        AppHub.ID sejauh berkaitan dengan produk yang diatur di dalamnya, dan
+        menggantikan ketentuan sebelumnya yang mungkin pernah berlaku.
+      </p>
+      <p>
+        Apabila terdapat ketentuan khusus produk atau perjanjian terpisah yang sah,
+        maka ketentuan tersebut berlaku sesuai ruang lingkup masing-masing tanpa
+        menghapus keberlakuan dokumen ini secara keseluruhan.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 45 ============ -->
+    <article class="section" id="pasal-45">
+      <div class="section-head">
+        <div class="section-num">45</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 45</p>
+          <h2 class="section-title">Tanggal Efektif dan Pembaruan</h2>
+        </div>
+      </div>
+
+      <div class="meta-card" style="margin:0 0 4px;">
+        <div class="meta-grid">
+          <div class="meta-item">
+            <span class="meta-label">Effective Date</span>
+            <span class="meta-value placeholder">[DD Month YYYY]</span>
+          </div>
+          <div class="meta-item">
+            <span class="meta-label">Last Updated</span>
+            <span class="meta-value placeholder">[DD Month YYYY]</span>
+          </div>
+        </div>
+      </div>
+      <p style="margin-top:14px;">
+        Tanggal efektif dan tanggal pembaruan di atas akan ditetapkan oleh AppHub.ID
+        pada saat dokumen ini secara resmi diberlakukan. Pengguna dianjurkan meninjau
+        tanggal tersebut secara berkala untuk mengetahui versi terbaru yang berlaku.
+      </p>
+    </article>
+
+    <!-- ============ PASAL 46 ============ -->
+    <article class="section" id="pasal-46">
+      <div class="section-head">
+        <div class="section-num">46</div>
+        <div class="section-title-wrap">
+          <p class="section-kicker">Pasal 46</p>
+          <h2 class="section-title">Kontak Resmi</h2>
+        </div>
+      </div>
+
+      <p>
+        Pertanyaan, klarifikasi, atau komunikasi resmi terkait dokumen ini dapat
+        disampaikan melalui kontak berikut:
+      </p>
+
+      <div class="meta-card" style="margin:14px 0 0;">
+        <div class="meta-grid">
+          <div class="meta-item full">
+            <span class="meta-label">Developer</span>
+            <span class="meta-value">AppHub.ID</span>
+          </div>
+          <div class="meta-item full">
+            <span class="meta-label">Email Resmi</span>
+            <span class="meta-value placeholder">[EMAIL RESMI APPHUB.ID]</span>
+          </div>
+        </div>
+      </div>
+
+      <p style="margin-top:14px;">
+        Informasi kontak di atas akan diperbarui secara resmi oleh AppHub.ID apabila
+        telah ditetapkan. Mohon tidak menggunakan alamat atau kanal lain yang tidak
+        secara resmi diumumkan oleh AppHub.ID.
+      </p>
+    </article>
+
+    <hr class="divider">
+
+    <p style="font-size:13px;color:#6b7280;line-height:1.7;text-align:center;margin:0;">
+      Dokumen ini merupakan bagian dari komitmen AppHub.ID untuk memberikan
+      transparansi mengenai hak dan kewajiban pengguna dalam menggunakan produk
+      yang dikembangkan.
+    </p>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-brand">AppHub.ID</div>
+    <div class="footer-sub">Official Terms of Use</div>
+    <hr class="footer-line">
+    <div class="footer-meta">
+      <strong>©2026 AppHub.ID</strong><br>
+      Last Updated: 04 oktober 2026
+    </div>
+    <div class="footer-copy">
+      Seluruh hak dilindungi sesuai ketentuan yang berlaku.
+    </div>
+  </footer>
+
+</div>
+
+<script>
+(function () {
+  'use strict';
+
+  /* =========================================================
+     DEVICE DETECTION
+     Tujuan: hanya mengizinkan smartphone Android dan iPhone
+     (serta iPod). Tablet, desktop, laptop, dan perangkat lain
+     akan diarahkan ke halaman "Perangkat Tidak Didukung".
+     ========================================================= */
+
+  function detectDevice() {
+    var ua = '';
+    var platform = '';
+    var maxTouch = 0;
+
+    try { ua = String(navigator.userAgent || ''); } catch (e) { ua = ''; }
+    try { platform = String(navigator.platform || ''); } catch (e) { platform = ''; }
+    try { maxTouch = Number(navigator.maxTouchPoints || 0); } catch (e) { maxTouch = 0; }
+
+    if (!ua) {
+      // Fallback aman: jika user-agent tidak dapat dibaca, tolak.
+      return false;
+    }
+
+    var uaLower = ua.toLowerCase();
+
+    // ---- 1. iPad modern (iPadOS 13+) melaporkan diri sebagai MacIntel
+    //         dengan maxTouchPoints > 1. Harus ditolak (tablet).
+    var isIPadOSDesktopMode = (platform === 'MacIntel' && maxTouch > 1);
+    if (isIPadOSDesktopMode) {
+      return false;
+    }
+
+    // ---- 2. iPad klasik
+    if (/ipad/i.test(uaLower)) {
+      return false;
+    }
+
+    // ---- 3. iPod diperlakukan sebagai perangkat mobile Apple
+    if (/ipod/i.test(uaLower)) {
+      return true;
+    }
+
+    // ---- 4. iPhone
+    if (/iphone/i.test(uaLower)) {
+      return true;
+    }
+
+    // ---- 5. Android
+    if (/android/i.test(uaLower)) {
+      // Android Tablet biasanya tidak menyertakan kata "Mobile" pada UA.
+      if (/mobile/i.test(uaLower)) {
+        return true;
+      }
+      return false;
+    }
+
+    // ---- 6. Deteksi tambahan: beberapa tablet lain
+    if (/tablet/i.test(uaLower)) {
+      return false;
+    }
+    if (/kindle/i.test(uaLower) || /silk/i.test(uaLower)) {
+      return false;
+    }
+    if (/playbook/i.test(uaLower)) {
+      return false;
+    }
+
+    // ---- 7. Desktop / laptop / Chromebook / lainnya
+    //        Tidak diizinkan.
+    return false;
+  }
+
+  function showScreen(supported) {
+    var unsupported = document.getElementById('unsupported-screen');
+    var main = document.getElementById('main-content');
+    if (!unsupported || !main) {
+      return;
+    }
+    if (supported) {
+      unsupported.classList.remove('active');
+      main.classList.add('active');
+    } else {
+      main.classList.remove('active');
+      unsupported.classList.add('active');
+    }
+  }
+
+  /* =========================================================
+     TOC TOGGLE
+     ========================================================= */
+  function initToc() {
+    var toc = document.getElementById('toc');
+    var toggle = document.getElementById('tocToggle');
+    if (!toc || !toggle) {
+      return;
+    }
+
+    toggle.addEventListener('click', function () {
+      var isOpen = toc.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    });
+
+    // Tutup TOC otomatis setelah memilih tautan (pengalaman mobile)
+    var links = toc.querySelectorAll('.toc-list a');
+    var i;
+    for (i = 0; i < links.length; i++) {
+      links[i].addEventListener('click', function () {
+        toc.classList.remove('open');
+        toggle.setAttribute('aria-expanded', 'false');
+      });
+    }
+  }
+
+  /* =========================================================
+     PERLINDUNGAN DASAR TERHADAP PENYALINAN TEKS
+     - Menonaktifkan context menu
+     - Menonaktifkan drag start
+     - Memblokir shortcut copy / cut / select-all / save
+     Tidak memblokir scrolling, zoom, tombol Back, atau aksesibilitas
+     dasar. Perlindungan ini bukan jaminan mutlak.
+     ========================================================= */
+  function initCopyProtection() {
+    // 1. Context menu
+    document.addEventListener('contextmenu', function (e) {
+      var t = e.target;
+      // Izinkan context menu pada input/textarea jika ada
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) {
+        return;
+      }
+      e.preventDefault();
+      return false;
+    }, false);
+
+    // 2. Drag start (teks maupun gambar)
+    document.addEventListener('dragstart', function (e) {
+      e.preventDefault();
+      return false;
+    }, false);
+
+    // 3. Select start (mencegah pemilihan teks melalui klik dan drag)
+    document.addEventListener('selectstart', function (e) {
+      var t = e.target;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) {
+        return;
+      }
+      e.preventDefault();
+      return false;
+    }, false);
+
+    // 4. Shortcut keyboard
+    document.addEventListener('keydown', function (e) {
+      var key = e.key ? String(e.key).toLowerCase() : '';
+      var ctrl = e.ctrlKey || e.metaKey;
+
+      if (!ctrl) {
+        return;
+      }
+
+      // Blokir: Ctrl/Cmd + C, X, A, S, U, P
+      if (key === 'c' || key === 'x' || key === 'a' || key === 's' || key === 'u' || key === 'p') {
+        // Izinkan pada input/textarea agar tidak merusak aksesibilitas form (jika ada)
+        var t = e.target;
+        if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) {
+          return;
+        }
+        e.preventDefault();
+        return false;
+      }
+
+      // Blokir Ctrl/Cmd + Shift + C, I, J (devtools umum)
+      if (e.shiftKey && (key === 'c' || key === 'i' || key === 'j')) {
+        e.preventDefault();
+        return false;
+      }
+    }, false);
+
+    // 5. Copy / cut events (lapisan tambahan)
+    document.addEventListener('copy', function (e) {
+      var t = e.target;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) {
+        return;
+      }
+      if (e.clipboardData && typeof e.clipboardData.setData === 'function') {
+        e.clipboardData.setData('text/plain', '');
+      }
+      e.preventDefault();
+      return false;
+    }, false);
+
+    document.addEventListener('cut', function (e) {
+      var t = e.target;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA')) {
+        return;
+      }
+      e.preventDefault();
+      return false;
+    }, false);
+
+    // 6. Mencegah drop teks dari luar
+    document.addEventListener('drop', function (e) {
+      e.preventDefault();
+      return false;
+    }, false);
+
+    document.addEventListener('dragover', function (e) {
+      e.preventDefault();
+      return false;
+    }, false);
+  }
+
+  /* =========================================================
+     INISIALISASI
+     ========================================================= */
+  function init() {
+    var supported = false;
+    try {
+      supported = detectDevice();
+    } catch (e) {
+      supported = false;
+    }
+
+    showScreen(supported);
+
+    if (supported) {
+      try { initToc(); } catch (e) { /* silent */ }
+      try { initCopyProtection(); } catch (e) { /* silent */ }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+})();
+</script>
+
+</body>
+</html>
